@@ -1,0 +1,4 @@
+﻿dotnet watch run --project cmp175 
+dotnet ef migrations add InitialCreateIdentity --project cmp175
+dotnet ef migrations add ExtendIdentityUser --project cmp175
+dotnet ef database update --project cmp175

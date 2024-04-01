@@ -1,0 +1,33 @@
+﻿@{
+    Layout = "_Layout";
+}
+@model IEnumerable<cmp175.Models.Sourse>
+<h2>Products</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>NameSourse</th>
+            <th>Describe</th>
+            <th>Teacher_name</th>
+            <th>TimeVideo</th>
+            <th>imageUrl</th>
+            <th>video</th>
+            
+
+        </tr>
+    </thead>
+     <tbody>
+                @foreach (var sourse in Model)
+                {
+                    <tr>
+                        <td>@sourse.NameSourse</td>
+                        <td>@sourse.Description</td>
+                        <td>@sourse.quantityVideo</td>
+                        <td>@sourse.TimeVideo</td>
+                        <td><img src="@sourse.imageUrl" style="max-width: 100px;" /></td>
+                        <td><a asp-action="ViewVideos" asp-route-sourseId="@sourse.Id">@sourse.NameSourse</a></td>
+                    </tr>
+                }
+            </tbody>
+</table>

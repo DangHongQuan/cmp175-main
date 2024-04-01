@@ -1,0 +1,32 @@
+﻿@model List<cmp175.Models.Sourse>
+<h1>Danh sách tất cả các Source</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Tên Source</th>
+            <th>Giá</th>
+            <th>Mô tả</th>
+            <th>Số lượng Video</th>
+            <th>Thời lượng Video</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var source in Model)
+        {
+            <tr>
+                <td>@source.Id</td>
+                <td>@source.NameSourse</td>
+                <td>@source.Price</td>
+                <td>@source.Description</td>
+                <td>@source.quantityVideo</td>
+                <td>@source.TimeVideo</td>
+                <td>
+                    <a asp-controller="Sourse" asp-action="Details" asp-route-id="@source.Id">Mua</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

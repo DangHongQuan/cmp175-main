@@ -1,0 +1,17 @@
+﻿@model cmp175.Models.Sourse
+
+<h1>Chi tiết Source</h1>
+
+<div>
+    <h4>ID: @Model.Id</h4>
+    <h4>Tên Source: @Model.NameSourse</h4>
+    <h4>Giá: @Model.Price</h4>
+    <h4>Mô tả: @Model.Description</h4>
+    <h4>Số lượng Video: @Model.quantityVideo</h4>
+    <h4>Thời lượng Video: @Model.TimeVideo</h4>
+</div>
+
+<form asp-controller="Order" asp-action="Create" method="post">
+    <input type="hidden" name="sourceId" value="@Model.Id" />
+    <button type="submit">Mua</button>
+</form>

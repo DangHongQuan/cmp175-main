@@ -1,0 +1,9 @@
+﻿@model List<cmp175.Models.VideoURL>
+
+@foreach (var video in Model)
+{
+    <div>
+        <h3>@video.Name</h3>
+        <iframe width="560" height="315" src="@video.videoURL" frameborder="0" allowfullscreen></iframe>
+    </div>
+}
