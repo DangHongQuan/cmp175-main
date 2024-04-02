@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/cmp175.styles.css" asp-append-version="true" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@300;400;500;700&family=Oswald:wght@600&display=swap"
+          rel="stylesheet">
 </head>
 <body>
     <header>
@@ -41,11 +45,31 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="footer">
         <div class="container">
-            &copy; 2024 - cmp175 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+
+            <ul class="footer-list">
+
+                <li>
+                    <a href="#" class="footer-link">Terms of use</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Privacy & Policy</a>
+                </li>
+
+            </ul>
+
+            <p class="copyright">
+                Copyright 2022 <a href="#" class="copyright-link">codewithsadee</a>. All Rights Reserved.
+            </p>
+
         </div>
     </footer>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/banner.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
