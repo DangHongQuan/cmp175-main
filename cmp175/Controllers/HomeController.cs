@@ -2,7 +2,7 @@ using LTW_Projeck_CPM174.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace LTW_Projeck_CPM174.Controllers
+namespace cmp175.Controllers
 {
     public class HomeController : Controller
     {
@@ -17,6 +17,7 @@ namespace LTW_Projeck_CPM174.Controllers
         {
             return View();
         }
+    
 
         public IActionResult Privacy()
         {
