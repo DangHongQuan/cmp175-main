@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 using cmp175.Models;
 using cpm175.DataAccess;
 
-public class EFSourseRepository : ISourseRepository
+public class EFSourceRepository : ISourseRepository
 {
     private readonly ApplicationDbContext _context;
 
-    public EFSourseRepository(ApplicationDbContext context)
+    public EFSourceRepository(ApplicationDbContext context)
     {
         _context = context;
     }
