@@ -8,10 +8,11 @@ using Microsoft.EntityFrameworkCore;
 
 
 
-namespace LTW_Projeck_CPM174.Controllers
+namespace cmp175.Controllers
+{
 
-{[Authorize(Roles = SD.Role_Admin)]
-    
+
+
     public class SourseController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -19,10 +20,11 @@ namespace LTW_Projeck_CPM174.Controllers
         private readonly IVideoUrlRepository _videoUrlRepository;
         private readonly ISourseRepository _sourseRepository;
 
-        
-        
 
-        public SourseController(ApplicationDbContext context, ILogger<SourseController> logger, IVideoUrlRepository videoUrlRepository, ISourseRepository sourseRepository)
+
+
+        public SourseController(ApplicationDbContext context, ILogger<SourseController> logger,
+            IVideoUrlRepository videoUrlRepository, ISourseRepository sourseRepository)
         {
             _context = context;
             _logger = logger;
@@ -34,6 +36,7 @@ namespace LTW_Projeck_CPM174.Controllers
         {
             return View();
         }
+
         public async Task<IActionResult> Mysourse()
         {
             // Lấy thông tin người dùng hiện tại
@@ -61,12 +64,12 @@ namespace LTW_Projeck_CPM174.Controllers
                 return NotFound();
             }
 
-           
+
             var hasAccess = await _context.Oders.AnyAsync(o => o.UserId == currentUser.Id && o.SourseId == sourseId);
 
             if (!hasAccess)
             {
-                return Forbid(); 
+                return Forbid();
             }
 
             var videos = await _context.VideoUrls.Where(v => v.SourseId == sourseId).ToListAsync();
@@ -85,21 +88,23 @@ namespace LTW_Projeck_CPM174.Controllers
         [HttpPost]
         public async Task<IActionResult> AddSourse(Sourse sourse, IFormFile imageUrl)
         {
-            if ( ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 if (imageUrl != null)
                 {
                     sourse.imageUrl = await SaveImage(imageUrl);
                 }
+
                 _context.Add(sourse);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
             return View();
         }
 
 
-        
+
         public IActionResult AddVideoUrl()
         {
             var sourseIds = _context.Sourses
@@ -116,13 +121,14 @@ namespace LTW_Projeck_CPM174.Controllers
         [HttpPost]
         public async Task<IActionResult> AddVideoUrl(VideoURL videoUrlddddddddddddd)
         {
-            if ( ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-               
+
                 _context.Add(videoUrlddddddddddddd);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
             var sourseIds = _context.Sourses.Select(s => new SelectListItem
             {
                 Value = s.Id.ToString(),
@@ -132,8 +138,8 @@ namespace LTW_Projeck_CPM174.Controllers
 
             return View(videoUrlddddddddddddd);
         }
-    
-              
+
+
         private async Task<string> SaveImage(IFormFile image)
         {
             var savePath = Path.Combine("wwwroot/images", image.FileName);
@@ -141,6 +147,7 @@ namespace LTW_Projeck_CPM174.Controllers
             {
                 await image.CopyToAsync(fileStream);
             }
+
             return "/images/" + image.FileName;
         }
 
@@ -157,9 +164,10 @@ namespace LTW_Projeck_CPM174.Controllers
             var source = await _context.Sourses.FirstOrDefaultAsync(s => s.Id == id);
             if (source == null)
             {
-                
+
                 return NotFound();
             }
+
             return View(source);
         }
 
