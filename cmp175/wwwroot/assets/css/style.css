@@ -932,7 +932,7 @@ section {
 .hero-section .iphone-wrap .phone-2,
 .hero-section .iphone-wrap .phone-1 {
   position: absolute;
-  top: -50%;
+  top: -80%;
   overflow: hidden;
   left: 0;
   box-shadow: 0 15px 50px 0 rgba(0, 0, 0, 0.3);
@@ -961,8 +961,8 @@ section {
 }
 
 .hero-section .iphone-wrap .phone-2 {
-  margin-top: 50px;
-  margin-left: 100px;
+/*  margin-top: 50px;
+  margin-left: 100px;*/
   width: 250px;
 }
 
@@ -971,7 +971,7 @@ section {
     width: 250px;
     position: absolute;
     margin-top: 0px;
-    margin-left: 100px;
+    margin-left: 70px;
   }
 }
 
