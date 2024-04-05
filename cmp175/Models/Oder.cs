@@ -12,8 +12,8 @@ public class Oder
     public decimal ToltalPrice { get; set; }
     public string UserId { get; set; }
     public IdentityUser? User { get; set; }
-    public int SourseId { get; set; }
-    public Sourse Sourse { get; set; }
+    public int SourceId { get; set; }
+    public Source Source { get; set; }
     
     
 }

@@ -2,7 +2,7 @@
 namespace cmp175.Models;
 
 
-public class Sourse
+public class Source
 {
     public int Id { get; set; }
     [Required, StringLength(100)]

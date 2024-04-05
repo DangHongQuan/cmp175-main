@@ -13,18 +13,18 @@ namespace cmp175.Controllers
 
 
 
-    public class SourseController : Controller
+    public class SourceController : Controller
     {
         private readonly ApplicationDbContext _context;
-        private readonly ILogger<SourseController> _logger;
+        private readonly ILogger<SourceController> _logger;
         private readonly IVideoUrlRepository _videoUrlRepository;
-        private readonly ISourseRepository _sourseRepository;
+        private readonly ISourceRepository _sourseRepository;
 
 
 
 
-        public SourseController(ApplicationDbContext context, ILogger<SourseController> logger,
-            IVideoUrlRepository videoUrlRepository, ISourseRepository sourseRepository)
+        public SourceController(ApplicationDbContext context, ILogger<SourceController> logger,
+            IVideoUrlRepository videoUrlRepository, ISourceRepository sourseRepository)
         {
             _context = context;
             _logger = logger;
@@ -49,7 +49,7 @@ namespace cmp175.Controllers
 
             // Lấy danh sách các khóa học mà người dùng đã mua
             var sourses = await _context.Sources
-                .Where(s => _context.Oders.Any(o => o.UserId == currentUser.Id && o.SourseId == s.Id))
+                .Where(s => _context.Oders.Any(o => o.UserId == currentUser.Id && o.SourceId == s.Id))
                 .ToListAsync();
 
             return View(sourses);
@@ -65,14 +65,14 @@ namespace cmp175.Controllers
             }
 
 
-            var hasAccess = await _context.Oders.AnyAsync(o => o.UserId == currentUser.Id && o.SourseId == sourseId);
+            var hasAccess = await _context.Oders.AnyAsync(o => o.UserId == currentUser.Id && o.SourceId == sourseId);
 
             if (!hasAccess)
             {
                 return Forbid();
             }
 
-            var videos = await _context.VideoUrls.Where(v => v.SourseId == sourseId).ToListAsync();
+            var videos = await _context.VideoUrls.Where(v => v.SourceId == sourseId).ToListAsync();
             return View(videos);
         }
 
@@ -86,7 +86,7 @@ namespace cmp175.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddSourse(Sourse sourse, IFormFile imageUrl)
+        public async Task<IActionResult> AddSourse(Source sourse, IFormFile imageUrl)
         {
             if (ModelState.IsValid)
             {
@@ -134,7 +134,7 @@ namespace cmp175.Controllers
                 Value = s.Id.ToString(),
                 Text = s.Id.ToString()
             }).ToList();
-            ViewBag.SourseIdList = new SelectList(sourseIds, "Id", "NameSourse", videoUrlddddddddddddd.SourseId);
+            ViewBag.SourseIdList = new SelectList(sourseIds, "Id", "NameSourse", videoUrlddddddddddddd.SourceId);
 
             return View(videoUrlddddddddddddd);
         }

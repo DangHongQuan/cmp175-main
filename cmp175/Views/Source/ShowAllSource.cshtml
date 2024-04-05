@@ -1,4 +1,4 @@
-﻿@model List<cmp175.Models.Sourse>
+﻿@model List<cmp175.Models.Source>
 <h1>Danh sách tất cả các Source</h1>
 
 <table class="table">
@@ -18,13 +18,13 @@
         {
             <tr>
                 <td>@source.Id</td>
-                <td>@source.NameSourse</td>
+                <td>@source.NameSource</td>
                 <td>@source.Price</td>
                 <td>@source.Description</td>
                 <td>@source.quantityVideo</td>
                 <td>@source.TimeVideo</td>
                 <td>
-                    <a asp-controller="Sourse" asp-action="Details" asp-route-id="@source.Id">Mua</a>
+                    <a asp-controller="Source" asp-action="Details" asp-route-id="@source.Id">Mua</a>
                 </td>
             </tr>
         }

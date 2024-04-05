@@ -12,8 +12,8 @@ namespace cpm175.DataAccess
 
 
         public DbSet<Oder> Oders { get; set; }
-        public DbSet<Sourse> Sources { get; set; }
-        public DbSet<SourseReview>  SourseReview{ get; set; }
+        public DbSet<Source> Sources { get; set; }
+        public DbSet<SourceReview>  SourceReview{ get; set; }
         public DbSet<VideoURL> VideoUrls { get; set; }
         public DbSet<Lesson> Lessons { get; set; }
         public DbSet<Example> Examples { get; set; }

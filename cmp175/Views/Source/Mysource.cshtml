@@ -1,13 +1,13 @@
 ﻿@{
     Layout = "_Layout";
 }
-@model IEnumerable<cmp175.Models.Sourse>
+@model IEnumerable<cmp175.Models.Source>
 <h2>Products</h2>
 
 <table class="table">
     <thead>
         <tr>
-            <th>NameSourse</th>
+            <th>NameSource</th>
             <th>Describe</th>
             <th>Teacher_name</th>
             <th>TimeVideo</th>
@@ -21,12 +21,12 @@
                 @foreach (var sourse in Model)
                 {
                     <tr>
-                        <td>@sourse.NameSourse</td>
+                        <td>@sourse.NameSource</td>
                         <td>@sourse.Description</td>
                         <td>@sourse.quantityVideo</td>
                         <td>@sourse.TimeVideo</td>
                         <td><img src="@sourse.imageUrl" style="max-width: 100px;" /></td>
-                        <td><a asp-action="ViewVideos" asp-route-sourseId="@sourse.Id">@sourse.NameSourse</a></td>
+                        <td><a asp-action="ViewVideos" asp-route-sourseId="@sourse.Id">@sourse.NameSource</a></td>
                     </tr>
                 }
             </tbody>

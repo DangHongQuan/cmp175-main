@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using cmp175.Models;
 using cpm175.DataAccess;
 
-public class EFSourceRepository : ISourseRepository
+public class EFSourceRepository : ISourceRepository
 {
     private readonly ApplicationDbContext _context;
 
@@ -15,23 +15,23 @@ public class EFSourceRepository : ISourseRepository
         _context = context;
     }
 
-    public async Task<IEnumerable<Sourse>> GetAllAsync()
+    public async Task<IEnumerable<Source>> GetAllAsync()
     {
         return await _context.Sources.ToListAsync();
     }
 
-    public async Task<Sourse> GetByIdAsync(int id)
+    public async Task<Source> GetByIdAsync(int id)
     {
         return await _context.Sources.FindAsync(id);
     }
 
-    public async Task AddAsync(Sourse product)
+    public async Task AddAsync(Source product)
     {
         await _context.Sources.AddAsync(product);
         await _context.SaveChangesAsync();
     }
 
-    public async Task UpdateAsync(Sourse product)
+    public async Task UpdateAsync(Source product)
     {
         _context.Entry(product).State = EntityState.Modified;
         await _context.SaveChangesAsync();
