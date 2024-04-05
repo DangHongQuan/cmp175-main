@@ -401,7 +401,7 @@ namespace cmp175.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Sourses");
+                    b.ToTable("Sources");
                 });
 
             modelBuilder.Entity("cmp175.Models.SourseReview", b =>

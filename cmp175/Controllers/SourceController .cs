@@ -48,7 +48,7 @@ namespace cmp175.Controllers
             }
 
             // Lấy danh sách các khóa học mà người dùng đã mua
-            var sourses = await _context.Sourses
+            var sourses = await _context.Sources
                 .Where(s => _context.Oders.Any(o => o.UserId == currentUser.Id && o.SourseId == s.Id))
                 .ToListAsync();
 
@@ -107,11 +107,11 @@ namespace cmp175.Controllers
 
         public IActionResult AddVideoUrl()
         {
-            var sourseIds = _context.Sourses
+            var sourseIds = _context.Sources
                 .Select(s => new SelectListItem
                 {
                     Value = s.Id.ToString(),
-                    Text = $"NameSourse: {s.NameSourse}"
+                    Text = $"NameSourse: {s.NameSource}"
                 })
                 .ToList();
             ViewBag.SourseIdList = new SelectList(sourseIds, "Value", "Text");
@@ -129,7 +129,7 @@ namespace cmp175.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            var sourseIds = _context.Sourses.Select(s => new SelectListItem
+            var sourseIds = _context.Sources.Select(s => new SelectListItem
             {
                 Value = s.Id.ToString(),
                 Text = s.Id.ToString()
@@ -154,14 +154,14 @@ namespace cmp175.Controllers
 
         public async Task<IActionResult> ShowAllSource()
         {
-            var sources = await _context.Sourses.ToListAsync();
+            var sources = await _context.Sources.ToListAsync();
             return View(sources);
         }
 
 
         public async Task<IActionResult> Details(int id)
         {
-            var source = await _context.Sourses.FirstOrDefaultAsync(s => s.Id == id);
+            var source = await _context.Sources.FirstOrDefaultAsync(s => s.Id == id);
             if (source == null)
             {
 

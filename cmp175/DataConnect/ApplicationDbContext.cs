@@ -12,7 +12,7 @@ namespace cpm175.DataAccess
 
 
         public DbSet<Oder> Oders { get; set; }
-        public DbSet<Sourse> Sourses { get; set; }
+        public DbSet<Sourse> Sources { get; set; }
         public DbSet<SourseReview>  SourseReview{ get; set; }
         public DbSet<VideoURL> VideoUrls { get; set; }
         public DbSet<Lesson> Lessons { get; set; }

@@ -85,12 +85,12 @@ namespace cmp175.Migrations
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateTable(
-                name: "Sourses",
+                name: "Sources",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    NameSourse = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: false)
+                    NameSource = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Price = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
@@ -105,7 +105,7 @@ namespace cmp175.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Sourses", x => x.Id);
+                    table.PrimaryKey("PK_Sources", x => x.Id);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
@@ -280,9 +280,9 @@ namespace cmp175.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Oders_Sourses_SourseId",
+                        name: "FK_Oders_Sources_SourseId",
                         column: x => x.SourseId,
-                        principalTable: "Sourses",
+                        principalTable: "Sources",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 })
@@ -308,9 +308,9 @@ namespace cmp175.Migrations
                         principalTable: "AspNetUsers",
                         principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_SourseReview_Sourses_SourseId",
+                        name: "FK_SourseReview_Sources_SourseId",
                         column: x => x.SourseId,
-                        principalTable: "Sourses",
+                        principalTable: "Sources",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 })
@@ -332,9 +332,9 @@ namespace cmp175.Migrations
                 {
                     table.PrimaryKey("PK_VideoUrls", x => x.id);
                     table.ForeignKey(
-                        name: "FK_VideoUrls_Sourses_SourseId",
+                        name: "FK_VideoUrls_Sources_SourseId",
                         column: x => x.SourseId,
-                        principalTable: "Sourses",
+                        principalTable: "Sources",
                         principalColumn: "Id");
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
@@ -513,7 +513,7 @@ namespace cmp175.Migrations
                 name: "AspNetUsers");
 
             migrationBuilder.DropTable(
-                name: "Sourses");
+                name: "Sources");
 
             migrationBuilder.DropTable(
                 name: "Examples");
