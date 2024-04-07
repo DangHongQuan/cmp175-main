@@ -1,4 +1,4 @@
-﻿@model cmp175.Models.Sourse
+﻿@model cmp175.Models.Source
 @using Microsoft.AspNetCore.Mvc.Rendering
 @{
     ViewData["Title"] = "Add Product";
@@ -6,11 +6,11 @@
 
 <h2>Add Product</h2>
 
-<form asp-action="AddSourse" method="post" enctype="multipart/form-data">
+<form asp-action="AddSource" method="post" enctype="multipart/form-data">
     <div class="form-group">
-        <label asp-for="NameSourse"></label>
-        <input asp-for="NameSourse" class="form-control" />
-        <span asp-validation-for="NameSourse" class="text-danger"></span>
+        <label asp-for="NameSource"></label>
+        <input asp-for="NameSource" class="form-control" />
+        <span asp-validation-for="NameSource" class="text-danger"></span>
     </div>
     <div class="form-group">
         <label asp-for="Description"></label>

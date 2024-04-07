@@ -19,7 +19,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(
 
 
 builder.Services.AddScoped<IVideoUrlRepository, EFVideoUrlRpository>();
-builder.Services.AddScoped<ISourseRepository, EFSourseRepository>();
+builder.Services.AddScoped<ISourceRepository, EFSourceRepository>();
 builder.Services.AddDefaultIdentity<IdentityUser>()
     .AddRoles<IdentityRole>() // Thêm dòng này để cấu hình việc sử dụng IdentityRole
     .AddEntityFrameworkStores<ApplicationDbContext>()

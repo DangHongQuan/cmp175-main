@@ -29,7 +29,7 @@ public class  EFVideoUrlRpository : IVideoUrlRepository
         await _context.SaveChangesAsync();
     }
 
-    public Task UpdateAsync(Sourse product)
+    public Task UpdateAsync(Source product)
     {
         throw new NotImplementedException();
     }

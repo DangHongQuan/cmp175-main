@@ -82,3 +82,10 @@ cmp175/obj/Debug/net8.0/cmp175.AssemblyInfoInputs.cache
 cmp175/obj/Debug/net8.0/cmp175.assets.cache
 cmp175/obj/Debug/net8.0/cmp175.csproj.AssemblyReference.cache
 cmp175/obj/Debug/net8.0/cmp175.GeneratedMSBuildEditorConfig.editorconfig
+*.dll
+*.cache
+*.cs
+*.vsidx
+*.v2
+*.dll
+*.editorconfig

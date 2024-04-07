@@ -4,11 +4,11 @@
 
 using cmp175.Models;
 
-public interface ISourseRepository
+public interface ISourceRepository
 {
-    Task<IEnumerable<Sourse>> GetAllAsync();
-    Task<Sourse> GetByIdAsync(int id);
-    Task AddAsync(Sourse product);
-    Task UpdateAsync(Sourse product);
+    Task<IEnumerable<Source>> GetAllAsync();
+    Task<Source> GetByIdAsync(int id);
+    Task AddAsync(Source product);
+    Task UpdateAsync(Source product);
     Task DeleteAsync(int id);
 }
