@@ -1,6 +1,7 @@
 using cpm175.DataAccess;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using Amazon.S3;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,7 +16,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(
         .EnableSensitiveDataLogging()
         .EnableDetailedErrors()
 );
-
+// AWS S3 services
+builder.Services.AddDefaultAWSOptions(builder.Configuration.GetAWSOptions());
+builder.Services.AddAWSService<IAmazonS3>();
 
 
 builder.Services.AddScoped<IVideoUrlRepository, EFVideoUrlRpository>();
