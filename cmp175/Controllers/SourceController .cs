@@ -80,7 +80,7 @@ namespace cmp175.Controllers
 
 
 
-        public IActionResult AddSourse()
+        /*public IActionResult AddSourse()
         {
             return View();
         }
@@ -102,6 +102,7 @@ namespace cmp175.Controllers
 
             return View();
         }
+        */
 
 
 

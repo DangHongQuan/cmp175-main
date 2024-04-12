@@ -1,5 +1,32 @@
 ﻿@model cmp175.Models.Source
 
+@{
+    Layout = "_Layout";
+}
+<style>
+    .button1 {  background-color: white;  color: black;  border: 1px solid black; border-radius: 5px; padding: 15px; padding-left: 50px; padding-right: 50px}
+    
+</style>
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-xl-6 col-md-12">
+            <img style="width: 100%" src="@Model.imageUrl"/>
+        </div>
+        <div class="col-xl-6 col-md-12">
+            <h4>@Model.NameSource</h4>
+            <span style="font-size: 25px">@Model.Price</span>
+            <p>@Model.Description</p>
+            <p>Số lượng video: @Model.quantityVideo</p>
+            <p>Tổng thời lượng video: @Model.TimeVideo</p>
+            <button class="button1 mt-5 "><span> Add to cart</span></button>
+        </div>
+    </div>
+</div>
+
+
+
+
+@*
 <h1>Chi tiết Source</h1>
 
 <div>
@@ -15,3 +42,4 @@
     <input type="hidden" name="sourceId" value="@Model.Id" />
     <button type="submit">Mua</button>
 </form>
+*@

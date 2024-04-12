@@ -1,32 +1,72 @@
 ﻿@model List<cmp175.Models.Source>
-<h1>Danh sách tất cả các Source</h1>
+@{
+    Layout = "_Layout";
+}
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Tên Source</th>
-            <th>Giá</th>
-            <th>Mô tả</th>
-            <th>Số lượng Video</th>
-            <th>Thời lượng Video</th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var source in Model)
-        {
-            <tr>
-                <td>@source.Id</td>
-                <td>@source.NameSource</td>
-                <td>@source.Price</td>
-                <td>@source.Description</td>
-                <td>@source.quantityVideo</td>
-                <td>@source.TimeVideo</td>
-                <td>
-                    <a asp-controller="Source" asp-action="Details" asp-route-id="@source.Id">Mua</a>
-                </td>
-            </tr>
+<style>
+    .hover-content {
+        display: none;
+        position: absolute;
+        bottom: -50px; 
+        left: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 10px;
+        transition: all 0.3s ease;
+    }
+
+    .card:hover .hover-content {
+        display: block;
+        bottom: 0px;
+        z-index: 1;
+    }
+
+    .hover-content button {
+        margin-right: 10px;
+    }
+    
+    .button1 {  background-color: white;  color: black;  border: 1px solid black; border-radius: 5px; padding: 10px; padding-left: 18px; padding-right: 18px}
+    .button2 {  background-color: #3bf83b;   border: 2px solid  #3bf83b; border-radius: 5px; padding: 10px; padding-left: 18px; padding-right: 18px;color: white}
+    
+  .button1:hover{
+  color: black;
+  }
+</style>
+
+<div class="container mt-5">
+    <div class="row">
+        @foreach (var source in Model) {
+            <div class="col-3 " >
+                <div style="height: 350px" class="card mb-4 container">
+
+                    <div class="py-3">
+                        <h5 class="mb-0"><img style="width: 260px ; height: 150px" src="@source.imageUrl" /></h5>
+                    </div>
+                    <div class="">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item align-items-center border-0 px-0 pb-0 " style="font-size: 25px">
+                                $@source.Price 
+                            </li>
+                            <li class="list-group-item align-items-center px-0">
+                                <h5> @source.NameSource</h5>
+                            </li>
+
+                        </ul>
+                        
+                    </div>
+                    <div class="hover-content ms-3 ">
+                        <a  style="text-decoration: none" asp-controller="Source" asp-action="Details" asp-route-id="@source.Id" class="button1 quick-shop-button"><span> Quick Shop</span></a>
+                        <button class="button2"><span> Add to cart</span></button>
+                      
+                    </div>
+                </div>
+            </div>
         }
-    </tbody>
-</table>
+    </div>
+    
+   
+
+</div>
+
+
+
