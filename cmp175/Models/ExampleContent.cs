@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace cmp175.Models;
 
@@ -11,5 +12,6 @@ public class ExampleContent
     public string imgExample { get; set; }
     public string Description { get; set; }
     public int ExampleId { get; set; }
+    [ForeignKey("ExampleId")]
     public Example Example { get; set; }
 }
