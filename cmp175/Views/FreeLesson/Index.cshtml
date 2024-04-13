@@ -1,16 +1,98 @@
-﻿<div id="lessonData"></div>
-<div id="exampleList"></div>
-<div id="contentDetails"></div>
+﻿<style>
+#lessonData ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#lessonData ul li {
+    display: inline-block; 
+    margin-right: 10px;
+   
+}
+
+#lessonData ul li a {
+    text-decoration: none;
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    color: #333; 
+      color: white;
+}
+
+div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  height: 32px;
+  margin-left: 0;
+    margin-right: -12px;
+
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+}
+.CLexampleList {
+    display: flex;
+    flex-direction: column;
+}
+
+.CLexampleList ul li {
+background-color: #b0afaf;
+    text-decoration: none; 
+    padding: 10px;
+    color: #333; 
+}
+#exampleList ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.CLexampleList ul li:hover {
+    background-color: #e0e0e0; 
+}
+#contentDetails ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.ls{
+text-decoration: none;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+color: white;
+}
+</style>
+
+<div class="scrollmenu " id="scrollmenu">
+    <div class=" mt-1" >
+    
+        <a class=""  id="lessonData"></a>
+        
+      </div>
+</div>
+<div class="">
+    <div class="row">
+        <div class="col-md-2  CLexampleList" >
+            <a class="text-center ls  " id="exampleList"></a>
+        </div>
+        <div class="col-md-8 mt-2">
+            <a  id="contentDetails"></a>
+        </div>
+    </div>
+</div>
+
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-    // Biến để lưu trữ ID của bài học được chọn
     var selectedLessonId = null;
 
     $(document).ready(function () {
-        // Gửi yêu cầu GET đến API khi trang được tải
         $.get("/api/lesson", function (data) {
-            // Xử lý dữ liệu trả về từ API
             var lessons = data;
 
             // Hiển thị danh sách các bài học
