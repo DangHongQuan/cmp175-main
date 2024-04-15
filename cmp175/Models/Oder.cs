@@ -8,12 +8,14 @@ public class Oder
 {
     public int Id { get; set; }
     [Required, StringLength(100)]
-    public DateTime OderDateTime { get; set; }
-    public decimal ToltalPrice { get; set; }
-    public string UserId { get; set; }
+    public String ToltalPrice { get; set; }
+    public String Name { get; set; }
+    public String  Address { get; set; }
+    public String Phone { get; set; }
+    public string? UserId { get; set; }
     public IdentityUser? User { get; set; }
     public int SourceId { get; set; }
-    public Source Source { get; set; }
+    public Source? Source { get; set; }
     
     
 }

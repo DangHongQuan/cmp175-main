@@ -6,11 +6,10 @@
         <h2>Khóa học của tôi</h2>
         @foreach (var sourse in Model)
         {
-            <div class="card mt-3">
+            <div class="card-1 mt-3">
                 <img src="@sourse.imageUrl" alt="Placeholder Image" class="card-img">
                 <div class="card-body">
                     <h5 class="card-title">@sourse.NameSource</h5>
-                    <p class="card-text">@sourse.Description</p>
                     <p>Số lượng: @sourse.quantityVideo</p>
                     <a asp-action="ViewVideos" asp-route-sourseId="@sourse.Id" class="btn btn-primary btn-ms">Xem video</a>
                 </div>

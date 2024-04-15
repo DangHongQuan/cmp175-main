@@ -6,8 +6,10 @@
     <title>@ViewData["Title"] </title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
-    <link rel="stylesheet" href="~/WB_Academy.styles.css" asp-append-version="true"/>
+    @*<link rel="stylesheet" href="~/WB_Academy.styles.css" asp-append-version="true"/>*@
     <link rel="shortcut icon" type="image/png" href="/privateimg/logo1.svg"/>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+   rel="stylesheet" />
 </head>
 
 <body>
@@ -37,7 +39,7 @@
                         <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Certificate">Certificate</a>
                     </li>
                      <li class="nav-item">
-                                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">About</a>
+                                            <a class="nav-link text-dark" asp-area="" asp-controller="Source" asp-action="Mysourse">About</a>
                                         </li>
                 </ul>
 
@@ -45,7 +47,12 @@
                 
             </div>
             <partial name="_LoginPartial"/>
-
+            <form asp-controller="Cart" asp-action="ViewCart" class="d-flex">
+                <button class="btn btn-outline-dark" type="submit">
+                    <i class="bi-cart-fill me-1"></i>
+                    Cart
+                </button>
+            </form>
 
         </div>
 

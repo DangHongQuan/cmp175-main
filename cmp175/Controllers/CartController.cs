@@ -1,84 +1,52 @@
-﻿/*using Microsoft.AspNetCore.Http;
+﻿using cmp175.Models;
+using cpm175.DataAccess;
 using Microsoft.AspNetCore.Mvc;
 
-namespace cmp175.Controllers
+public class CartController : Controller
 {
-    public class CartController : Controller
+    private readonly ApplicationDbContext _context;
+
+    public CartController(ApplicationDbContext context)
     {
-        // GET: CartController
-        public ActionResult Index()
+        _context = context;
+    }
+
+    public async Task<IActionResult> AddToCart(int sourceId)
+    {
+        var source = await _context.Sources.FindAsync(sourceId);
+        if (source == null)
         {
-            return View();
+            return NotFound();
         }
 
-        // GET: CartController/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
+        // Lấy hoặc tạo giỏ hàng từ Session
+        var cart = HttpContext.Session.GetObject<List<CartItem>>("Cart") ?? new List<CartItem>();
 
-        // GET: CartController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
+        var existingItem = cart.FirstOrDefault(item => item.SourceId == sourceId);
 
-        // POST: CartController/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        if (existingItem != null)
         {
-            try
+            existingItem.Quantity++;
+        }
+        else
+        {
+            cart.Add(new CartItem
             {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+                SourceId = source.Id,
+                NameSource = source.NameSource,
+                Price = source.Price,
+                Quantity = 1
+            });
         }
 
-        // GET: CartController/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
+        HttpContext.Session.SetObject("Cart", cart);
 
-        // POST: CartController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
+        return RedirectToAction("Index", "Home");
+    }
 
-        // GET: CartController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: CartController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
+    public IActionResult ViewCart()
+    {
+        var cart = HttpContext.Session.GetObject<List<CartItem>>("Cart") ?? new List<CartItem>();
+        return View(cart);
     }
 }
-*/

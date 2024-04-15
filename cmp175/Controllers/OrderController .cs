@@ -1,47 +1,68 @@
-﻿/*using cmp175.Models;
-using cpm175.DataAccess;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System;
+using cmp175.Models;
+using cpm175.DataAccess;
 
-namespace LTW_Projeck_CPM174.Controllers
+namespace cmp175.Controllers
 {
-
     public class OrderController : Controller
     {
-
         private readonly ApplicationDbContext _context;
 
-
         public OrderController(ApplicationDbContext context)
-            {
-                _context = context;
-            }
-            [HttpPost]
-            public async Task<IActionResult> Create(int sourceId)
-            {
-            // Lấy thông tin về người dùng đăng nhập
-            var currentUser = await _context.Users.FirstOrDefaultAsync(u => u.UserName == User.Identity.Name);
+        {
+            _context = context;
+        }
 
-            // Kiểm tra xem người dùng có đăng nhập không
-            if (currentUser == null)
+        [HttpPost]
+        public async Task<IActionResult> Create(Oder oder)
+        {
+            if (ModelState.IsValid)
+            {
+                var currentUser = await _context.Users.FirstOrDefaultAsync(u => u.UserName == User.Identity.Name);
+
+                if (currentUser == null)
                 {
-                return RedirectToPage("/Login");
+                    return RedirectToPage("/Login");
                 }
 
-                // Tạo một Order mới
-                var order = new Oder
+                // Kiểm tra xem UserId đã được lấy thành công chưa
+                if (string.IsNullOrEmpty(currentUser.Id))
                 {
-                    OderDateTime = DateTime.Now,
-                    SourceId = sourceId,
-                    UserId = currentUser.Id
+                    // UserId không được lấy thành công, xử lý tương ứng ở đây
+                    ModelState.AddModelError("", "Không thể lấy UserId của người dùng.");
+                    return View(oder);
+                }
+
+                // Tiếp tục xử lý khi UserId đã được lấy thành công
+                var order = new Oder()
+                {
+                    UserId = currentUser.Id,
+                    SourceId = oder.SourceId,
+                    Name = oder.Name,
+                    Address = oder.Address,
+                    Phone = oder.Phone,
+                    ToltalPrice = oder.ToltalPrice
                 };
 
                 _context.Oders.Add(order);
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
 
-                return RedirectToAction("Index", "Home"); // Hoặc chuyển hướng đến trang cảm ơn hoặc bất kỳ trang nào khác bạn muốn
+                return RedirectToAction("Index", "Home"); 
+            }
+            else
+            {
+                foreach (var modelStateEntry in ModelState.Values)
+                {
+                    foreach (var error in modelStateEntry.Errors)
+                    {
+                        Console.WriteLine($"ModelState Error: {error.ErrorMessage}");
+                    }
+                }
+        
+                return View(oder);
             }
         }
-
+    }
 }
-*/
