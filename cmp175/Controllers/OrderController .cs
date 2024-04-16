@@ -27,15 +27,12 @@ namespace cmp175.Controllers
                     return RedirectToPage("/Login");
                 }
 
-                // Kiểm tra xem UserId đã được lấy thành công chưa
                 if (string.IsNullOrEmpty(currentUser.Id))
                 {
-                    // UserId không được lấy thành công, xử lý tương ứng ở đây
                     ModelState.AddModelError("", "Không thể lấy UserId của người dùng.");
                     return View(oder);
                 }
 
-                // Tiếp tục xử lý khi UserId đã được lấy thành công
                 var order = new Oder()
                 {
                     UserId = currentUser.Id,
@@ -48,7 +45,7 @@ namespace cmp175.Controllers
 
                 _context.Oders.Add(order);
                 await _context.SaveChangesAsync();
-
+              
                 return RedirectToAction("Index", "Home"); 
             }
             else

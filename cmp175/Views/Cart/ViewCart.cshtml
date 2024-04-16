@@ -13,8 +13,7 @@
                             <tr>
                                 <th>Tên sản phẩm</th>
                                 <th>Giá</th>
-                                <th>Số lượng</th>
-                                <th>Tổng cộng</th>
+                               
                                 <th></th>
                             </tr>
                         </thead>
@@ -22,9 +21,7 @@
                             @foreach (var item in Model)
                             {
                                 <tr>
-                                    <td>@item.SourceId</td>
                                     <td>@item.NameSource</td>
-                                    <td>@item.Price</td>
                                     <td>@item.Price</td>
                                    <td>
                                        <form method="post" action="@Url.Action("RemoveFromCart", "Cart")">
@@ -60,7 +57,7 @@
                         <label for="phone">Số điện thoại:</label>
                         <input type="text" id="phone" name="Phone" class="form-control" required/>
                     </div>
-                    <button type="submit" class="btn btn-primary">Thanh toán</button>
+                    <button type="submit" class="btn btn-primary mt-5">Thanh toán</button>
                 </form>
             </div>
         </div>

@@ -18,7 +18,10 @@
             <p>@Model.Description</p>
             <p>Số lượng video: @Model.quantityVideo</p>
             <p>Tổng thời lượng video: @Model.TimeVideo</p>
-            <button class="button1 mt-5 "><span> Add to cart</span></button>
+            <form asp-action="AddToCart" asp-controller="Cart" class="ms-2" method="post">
+                                       <input type="hidden" name="sourceId" value="@Model.Id" />
+                                       <button class="button1 mt-5" type="submit">Mua Ngay</button>
+                                   </form>
         </div>
     </div>
 </div>
