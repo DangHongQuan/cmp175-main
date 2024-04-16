@@ -19,8 +19,7 @@ public class CartController : Controller
             return NotFound();
         }
 
-		// Lấy hoặc tạo giỏ hàng từ Session
-		var cart = HttpContext.Session.GetObject<List<CartItem>>("Cart") ?? new List<CartItem>();
+        var cart = HttpContext.Session.GetObject<List<CartItem>>("Cart") ?? new List<CartItem>();
 
         var existingItem = cart.FirstOrDefault(item => item.SourceId == sourceId);
 
@@ -44,11 +43,44 @@ public class CartController : Controller
         return RedirectToAction("Index", "Home");
     }
 
+    public IActionResult RemoveFromCart(int sourceId)
+    {
+        var cart = HttpContext.Session.GetObject<List<CartItem>>("Cart") ?? new List<CartItem>();
+
+        var existingItem = cart.FirstOrDefault(item => item.SourceId == sourceId);
+
+        if (existingItem != null)
+        {
+            cart.Remove(existingItem);
+            HttpContext.Session.SetObject("Cart", cart);
+        }
+
+        return RedirectToAction("ViewCart");
+    }
+
+    public IActionResult RemoveItemFromCart(int sourceId)
+    {
+        var cart = HttpContext.Session.GetObject<List<CartItem>>("Cart") ?? new List<CartItem>();
+
+        var existingItem = cart.FirstOrDefault(item => item.SourceId == sourceId);
+
+        if (existingItem != null && existingItem.Quantity > 1)
+        {
+            existingItem.Quantity--;
+        }
+        else if (existingItem != null && existingItem.Quantity == 1)
+        {
+            cart.Remove(existingItem);
+        }
+
+        HttpContext.Session.SetObject("Cart", cart);
+
+        return RedirectToAction("ViewCart");
+    }
+
     public IActionResult ViewCart()
     {
-		var cart = HttpContext.Session.GetObject<List<CartItem>>("Cart") ?? new List<CartItem>();
-		var existingSources = _context.Oders.Select(o => o.SourceId).ToList();
-		var newCart = cart.Where(item => !existingSources.Contains(item.SourceId)).ToList();
-		return View(newCart);
+        var cart = HttpContext.Session.GetObject<List<CartItem>>("Cart") ?? new List<CartItem>();
+        return View(cart);
     }
 }
