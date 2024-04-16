@@ -1,63 +1,98 @@
 ﻿@model List<CartItem>
 
-<h1>Giỏ hàng của bạn</h1>
+<h1 class="container mb-5">Giỏ hàng của bạn</h1>
 
 @if (Model.Count > 0)
 {
-    <table>
-        <thead>
-            <tr>
-                <th>Tên sản phẩm</th>
-                <th>Giá</th>
-                <th>Số lượng</th>
-                <th>Tổng cộng</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td>@item.SourceId</td>
-                    <td>@item.NameSource</td>
-                    <td>@item.Price</td>
-                    <td>
-                        <input type="number" min="1" value="@item.Quantity" onchange="updateQuantity(@item.SourceId, this.value)"/>
-                    </td>
-                    <td>@item.Price</td>
-                    <td><button onclick="removeFromCart(@item.SourceId)">Xóa</button></td>
-                     <input type="hidden" name="SourceIds" value="@item.SourceId" />
-                </tr>
-            }
-        </tbody>
-    </table>
+    <div class="container" style="margin-bottom: 300px">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Tên sản phẩm</th>
+                                <th>Giá</th>
+                                <th>Số lượng</th>
+                                <th>Tổng cộng</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.SourceId</td>
+                                    <td>@item.NameSource</td>
+                                    <td>@item.Price</td>
+                                    <td>@item.Price</td>
+                                   <td>
+                                       <form method="post" action="@Url.Action("RemoveFromCart", "Cart")">
+                                           <input type="hidden" name="sourceId" value="@item.SourceId" />
+                                           <button type="submit" class="btn btn-danger">Xóa</button>
+                                       </form>
+                                   </td>
 
-    <h2>Thông tin thanh toán</h2>
-    <form asp-controller="Order" asp-action="Create" method="post">
-        <input type="hidden" name="SourceId" value="@string.Join(",", Model.Select(item => item.SourceId))" />
-        <input type="hidden" name="ToltalPrice" value="@string.Join(",", Model.Select(item => item.Price))" />
-        <label for="name">Tên:</label>
-        <input type="text" id="name" name="Name" required/><br/>
-        <label for="address">Địa chỉ:</label>
-        <input type="text" id="address" name="Address" required/><br/>
-        <label for="phone">Số điện thoại:</label>
-        <input type="text" id="phone" name="Phone" required/><br/>
-        <button type="submit">Thanh toán</button>
-    </form>
+                                    <input type="hidden" name="SourceId" value="@item.SourceId" />
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
 
-
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Thông tin thanh toán</h2>
+                <form asp-controller="Order" asp-action="Create" method="post">
+                    <input type="hidden" name="SourceId" value="@string.Join(",", Model.Select(item => item.SourceId))" />
+                    <input type="hidden" name="ToltalPrice" value="@string.Join(",", Model.Select(item => item.Price))" />
+                    <div class="form-group">
+                        <label for="name">Tên:</label>
+                        <input type="text" id="name" name="Name" class="form-control" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Địa chỉ:</label>
+                        <input type="text" id="address" name="Address" class="form-control" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Số điện thoại:</label>
+                        <input type="text" id="phone" name="Phone" class="form-control" required/>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Thanh toán</button>
+                </form>
+            </div>
+        </div>
+    </div>
 }
 else
 {
-    <p>Giỏ hàng của bạn đang trống.</p>
+    <p class="text-center" style="margin-bottom: 300px">Giỏ hàng của bạn đang trống.</p>
 }
 
 @section scripts {
     <script>
-    
-
         function removeFromCart(sourceId) {
-          
+            fetch('/Cart/RemoveFromCart', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    sourceId: sourceId
+                })
+            })
+            .then(response => {
+                if (response.ok) {
+                    location.reload();
+                } else {
+                    console.error('Failed to remove item from cart');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
         }
     </script>
 }
