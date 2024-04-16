@@ -17,115 +17,175 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = cmp175
 build_property.RootNamespace = cmp175
-build_property.ProjectDir = C:\Users\ADMIN\source\repos\cmp175\cmp175\
+build_property.ProjectDir = D:\hoc\CMP175\cmp175-main\cmp175\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\ADMIN\source\repos\cmp175\cmp175
+build_property.MSBuildProjectDirectory = D:\hoc\CMP175\cmp175-main\cmp175
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/ADMIN/source/repos/cmp175/cmp175/Areas/Identity/Pages/Account/Login.cshtml]
+[D:/hoc/CMP175/cmp175-main/cmp175/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/cmp175/cmp175/Areas/Identity/Pages/Account/Logout.cshtml]
+[D:/hoc/CMP175/cmp175-main/cmp175/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/cmp175/cmp175/Areas/Identity/Pages/Account/Manage/Index.cshtml]
+[D:/hoc/CMP175/cmp175-main/cmp175/Areas/Identity/Pages/Account/Manage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/cmp175/cmp175/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+[D:/hoc/CMP175/cmp175-main/cmp175/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/cmp175/cmp175/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+[D:/hoc/CMP175/cmp175-main/cmp175/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/cmp175/cmp175/Areas/Identity/Pages/Account/Register.cshtml]
+[D:/hoc/CMP175/cmp175-main/cmp175/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/cmp175/cmp175/Areas/Identity/Pages/Account/_StatusMessage.cshtml]
+[D:/hoc/CMP175/cmp175-main/cmp175/Areas/Identity/Pages/Account/_StatusMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfU3RhdHVzTWVzc2FnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/cmp175/cmp175/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[D:/hoc/CMP175/cmp175-main/cmp175/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/cmp175/cmp175/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[D:/hoc/CMP175/cmp175-main/cmp175/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/cmp175/cmp175/Areas/Identity/Pages/_ViewImports.cshtml]
+[D:/hoc/CMP175/cmp175-main/cmp175/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/cmp175/cmp175/Areas/Identity/Pages/_ViewStart.cshtml]
+[D:/hoc/CMP175/cmp175-main/cmp175/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/cmp175/cmp175/Views/Home/Index.cshtml]
+[D:/hoc/CMP175/cmp175-main/cmp175/Views/Cart/CartDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxDYXJ0RGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hoc/CMP175/cmp175-main/cmp175/Views/Cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hoc/CMP175/cmp175-main/cmp175/Views/Cart/ViewCart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxWaWV3Q2FydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hoc/CMP175/cmp175-main/cmp175/Views/FreeLesson/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJlZUxlc3NvblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hoc/CMP175/cmp175-main/cmp175/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hoc/CMP175/cmp175-main/cmp175/Views/Home/Certificate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDZXJ0aWZpY2F0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hoc/CMP175/cmp175-main/cmp175/Views/Home/Course.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb3Vyc2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hoc/CMP175/cmp175-main/cmp175/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/cmp175/cmp175/Views/Home/Privacy.cshtml]
+[D:/hoc/CMP175/cmp175-main/cmp175/Views/Home/LandingPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMYW5kaW5nUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hoc/CMP175/cmp175-main/cmp175/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/cmp175/cmp175/Views/Shared/Error.cshtml]
+[D:/hoc/CMP175/cmp175-main/cmp175/Views/Landing/LandingPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZGluZ1xMYW5kaW5nUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hoc/CMP175/cmp175-main/cmp175/Views/Order/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hoc/CMP175/cmp175-main/cmp175/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/cmp175/cmp175/Views/Shared/_LoginPartial.cshtml]
+[D:/hoc/CMP175/cmp175-main/cmp175/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/cmp175/cmp175/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/hoc/CMP175/cmp175-main/cmp175/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/cmp175/cmp175/Views/Sourse/AddSourse.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU291cnNlXEFkZFNvdXJzZS5jc2h0bWw=
+[D:/hoc/CMP175/cmp175-main/cmp175/Views/Shop/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/cmp175/cmp175/Views/Sourse/AddVideoUrl.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU291cnNlXEFkZFZpZGVvVXJsLmNzaHRtbA==
+[D:/hoc/CMP175/cmp175-main/cmp175/Views/Shop/Item.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxJdGVtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/cmp175/cmp175/Views/Sourse/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU291cnNlXERldGFpbHMuY3NodG1s
+[D:/hoc/CMP175/cmp175-main/cmp175/Views/Shop/ItemDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxJdGVtRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/cmp175/cmp175/Views/Sourse/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU291cnNlXEluZGV4LmNzaHRtbA==
+[D:/hoc/CMP175/cmp175-main/cmp175/Views/Source/AddSourse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU291cmNlXEFkZFNvdXJzZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/cmp175/cmp175/Views/Sourse/Mysourse.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU291cnNlXE15c291cnNlLmNzaHRtbA==
+[D:/hoc/CMP175/cmp175-main/cmp175/Views/Source/AddVideoUrl.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU291cmNlXEFkZFZpZGVvVXJsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/cmp175/cmp175/Views/Sourse/ShowAllSource.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU291cnNlXFNob3dBbGxTb3VyY2UuY3NodG1s
+[D:/hoc/CMP175/cmp175-main/cmp175/Views/Source/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU291cmNlXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/cmp175/cmp175/Views/Sourse/ViewVideos.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU291cnNlXFZpZXdWaWRlb3MuY3NodG1s
+[D:/hoc/CMP175/cmp175-main/cmp175/Views/Source/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU291cmNlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/cmp175/cmp175/Views/_ViewImports.cshtml]
+[D:/hoc/CMP175/cmp175-main/cmp175/Views/Source/Mysource.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU291cmNlXE15c291cmNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hoc/CMP175/cmp175-main/cmp175/Views/Source/Mysourse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU291cmNlXE15c291cnNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hoc/CMP175/cmp175-main/cmp175/Views/Source/ShowAllSource.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU291cmNlXFNob3dBbGxTb3VyY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hoc/CMP175/cmp175-main/cmp175/Views/Source/ViewVideos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU291cmNlXFZpZXdWaWRlb3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hoc/CMP175/cmp175-main/cmp175/Views/Source/_SourceOrderPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU291cmNlXF9Tb3VyY2VPcmRlclBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/hoc/CMP175/cmp175-main/cmp175/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/cmp175/cmp175/Views/_ViewStart.cshtml]
+[D:/hoc/CMP175/cmp175-main/cmp175/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/cmp175/cmp175/Views/Shared/_Layout.cshtml]
+[D:/hoc/CMP175/cmp175-main/cmp175/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-di9f5fr5ks

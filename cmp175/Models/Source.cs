@@ -12,5 +12,8 @@ public class Source
     public string quantityVideo { get; set; }
     public string TimeVideo { get; set; }
     public string? imageUrl { get; set; }
+    public bool paid { get; set; }
+    public string lessonId { get; set; }
+    public string category { get; set;}
 
 }

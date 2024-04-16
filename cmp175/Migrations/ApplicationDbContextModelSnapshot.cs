@@ -17,28 +17,10 @@ namespace cmp175.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.2")
+                .HasAnnotation("ProductVersion", "8.0.3")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
-
-            modelBuilder.Entity("LTW_Projeck_CPM174.Models.Lesson", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("varchar(100)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Lessons");
-                });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
@@ -240,6 +222,47 @@ namespace cmp175.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("cmp175.Models.Admin", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Admins");
+                });
+
+            modelBuilder.Entity("cmp175.Models.Category", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<int?>("SourceId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("SourceId");
+
+                    b.ToTable("Categories");
+                });
+
             modelBuilder.Entity("cmp175.Models.ContentDetail", b =>
                 {
                     b.Property<int>("Id")
@@ -256,7 +279,7 @@ namespace cmp175.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<int>("ExampleContentId")
+                    b.Property<int>("ExampleId")
                         .HasColumnType("int");
 
                     b.Property<string>("name")
@@ -270,18 +293,18 @@ namespace cmp175.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ExampleContentId");
+                    b.HasIndex("ExampleId");
 
                     b.ToTable("ContentDetails");
                 });
 
             modelBuilder.Entity("cmp175.Models.Example", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("ExampleId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("ExampleId"));
 
                     b.Property<int>("LessonId")
                         .HasColumnType("int");
@@ -291,7 +314,7 @@ namespace cmp175.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("varchar(100)");
 
-                    b.HasKey("Id");
+                    b.HasKey("ExampleId");
 
                     b.HasIndex("LessonId");
 
@@ -333,6 +356,24 @@ namespace cmp175.Migrations
                     b.ToTable("ExampleContents");
                 });
 
+            modelBuilder.Entity("cmp175.Models.Lesson", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Lessons");
+                });
+
             modelBuilder.Entity("cmp175.Models.Oder", b =>
                 {
                     b.Property<int>("Id")
@@ -341,30 +382,39 @@ namespace cmp175.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("OderDateTime")
-                        .HasMaxLength(100)
-                        .HasColumnType("datetime(6)");
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
-                    b.Property<int>("SourseId")
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("SourceId")
                         .HasColumnType("int");
 
-                    b.Property<decimal>("ToltalPrice")
-                        .HasColumnType("decimal(65,30)");
+                    b.Property<string>("ToltalPrice")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
 
                     b.Property<string>("UserId")
-                        .IsRequired()
                         .HasColumnType("varchar(255)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("SourseId");
+                    b.HasIndex("SourceId");
 
                     b.HasIndex("UserId");
 
                     b.ToTable("Oders");
                 });
 
-            modelBuilder.Entity("cmp175.Models.Sourse", b =>
+            modelBuilder.Entity("cmp175.Models.Source", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -376,7 +426,7 @@ namespace cmp175.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<string>("NameSourse")
+                    b.Property<string>("NameSource")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("varchar(100)");
@@ -389,8 +439,19 @@ namespace cmp175.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
+                    b.Property<string>("category")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
                     b.Property<string>("imageUrl")
                         .HasColumnType("longtext");
+
+                    b.Property<string>("lessonId")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<bool>("paid")
+                        .HasColumnType("tinyint(1)");
 
                     b.Property<string>("quantityVideo")
                         .IsRequired()
@@ -401,7 +462,7 @@ namespace cmp175.Migrations
                     b.ToTable("Sources");
                 });
 
-            modelBuilder.Entity("cmp175.Models.SourseReview", b =>
+            modelBuilder.Entity("cmp175.Models.SourceReview", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -409,7 +470,7 @@ namespace cmp175.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("SourseId")
+                    b.Property<int>("SourceId")
                         .HasColumnType("int");
 
                     b.Property<int>("UserId")
@@ -420,11 +481,11 @@ namespace cmp175.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("SourseId");
+                    b.HasIndex("SourceId");
 
                     b.HasIndex("UserId1");
 
-                    b.ToTable("SourseReview");
+                    b.ToTable("SourceReview");
                 });
 
             modelBuilder.Entity("cmp175.Models.VideoURL", b =>
@@ -438,7 +499,7 @@ namespace cmp175.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("longtext");
 
-                    b.Property<int?>("SourseId")
+                    b.Property<int?>("SourceId")
                         .HasColumnType("int");
 
                     b.Property<string>("videoURL")
@@ -446,7 +507,7 @@ namespace cmp175.Migrations
 
                     b.HasKey("id");
 
-                    b.HasIndex("SourseId");
+                    b.HasIndex("SourceId");
 
                     b.ToTable("VideoUrls");
                 });
@@ -502,20 +563,29 @@ namespace cmp175.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("cmp175.Models.Category", b =>
+                {
+                    b.HasOne("cmp175.Models.Source", "Source")
+                        .WithMany()
+                        .HasForeignKey("SourceId");
+
+                    b.Navigation("Source");
+                });
+
             modelBuilder.Entity("cmp175.Models.ContentDetail", b =>
                 {
-                    b.HasOne("cmp175.Models.ExampleContent", "ExampleContent")
+                    b.HasOne("cmp175.Models.Example", "Example")
                         .WithMany()
-                        .HasForeignKey("ExampleContentId")
+                        .HasForeignKey("ExampleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("ExampleContent");
+                    b.Navigation("Example");
                 });
 
             modelBuilder.Entity("cmp175.Models.Example", b =>
                 {
-                    b.HasOne("LTW_Projeck_CPM174.Models.Lesson", "Lesson")
+                    b.HasOne("cmp175.Models.Lesson", "Lesson")
                         .WithMany()
                         .HasForeignKey("LessonId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -537,28 +607,26 @@ namespace cmp175.Migrations
 
             modelBuilder.Entity("cmp175.Models.Oder", b =>
                 {
-                    b.HasOne("cmp175.Models.Sourse", "Sourse")
+                    b.HasOne("cmp175.Models.Source", "Source")
                         .WithMany()
-                        .HasForeignKey("SourseId")
+                        .HasForeignKey("SourceId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "User")
                         .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("UserId");
 
-                    b.Navigation("Sourse");
+                    b.Navigation("Source");
 
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("cmp175.Models.SourseReview", b =>
+            modelBuilder.Entity("cmp175.Models.SourceReview", b =>
                 {
-                    b.HasOne("cmp175.Models.Sourse", "Sourse")
+                    b.HasOne("cmp175.Models.Source", "Source")
                         .WithMany()
-                        .HasForeignKey("SourseId")
+                        .HasForeignKey("SourceId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -566,18 +634,18 @@ namespace cmp175.Migrations
                         .WithMany()
                         .HasForeignKey("UserId1");
 
-                    b.Navigation("Sourse");
+                    b.Navigation("Source");
 
                     b.Navigation("User");
                 });
 
             modelBuilder.Entity("cmp175.Models.VideoURL", b =>
                 {
-                    b.HasOne("cmp175.Models.Sourse", "Sourse")
+                    b.HasOne("cmp175.Models.Source", "Source")
                         .WithMany()
-                        .HasForeignKey("SourseId");
+                        .HasForeignKey("SourceId");
 
-                    b.Navigation("Sourse");
+                    b.Navigation("Source");
                 });
 #pragma warning restore 612, 618
         }

@@ -8,6 +8,8 @@
     ".NETCoreApp,Version=v8.0": {
       "cmp175/1.0.0": {
         "dependencies": {
+          "AWSSDK.Extensions.NETCore.Setup": "3.7.300",
+          "AWSSDK.S3": "3.7.307.11",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.3",
           "Microsoft.AspNetCore.Identity.UI": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.3",
@@ -17,6 +19,39 @@
         },
         "runtime": {
           "cmp175.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.7.303.10": {
+        "runtime": {
+          "lib/net8.0/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.303.10"
+          }
+        }
+      },
+      "AWSSDK.Extensions.NETCore.Setup/3.7.300": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.303.10",
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/AWSSDK.Extensions.NETCore.Setup.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.7.0"
+          }
+        }
+      },
+      "AWSSDK.S3/3.7.307.11": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.303.10"
+        },
+        "runtime": {
+          "lib/net8.0/AWSSDK.S3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.307.11"
+          }
         }
       },
       "Humanizer/2.14.1": {
@@ -1692,6 +1727,27 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AWSSDK.Core/3.7.303.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HKS6yq0M41SHwFXKveD/VIn4HgPfLlPIrvKdpADabrc5Vt6ExSIAbMEn+b0Dqx/bG1COToNqB4RAxBm7QaeU/Q==",
+      "path": "awssdk.core/3.7.303.10",
+      "hashPath": "awssdk.core.3.7.303.10.nupkg.sha512"
+    },
+    "AWSSDK.Extensions.NETCore.Setup/3.7.300": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zMxAHFYSAWHsVV9Cn96nE+V40agRCjT0etF10f0d/nFMMb1z7lecVwNadq9JYyqlDj+jsVRH9ydk4Al4v/1+jg==",
+      "path": "awssdk.extensions.netcore.setup/3.7.300",
+      "hashPath": "awssdk.extensions.netcore.setup.3.7.300.nupkg.sha512"
+    },
+    "AWSSDK.S3/3.7.307.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-La2//KKJjf5WjrCTGVLrV7qcLQzfpJfrrd0U9mu8oP0cpIcmwEWO1VQhR+tU0gdfAQdrP/JaM3vz3vc9/z//jw==",
+      "path": "awssdk.s3/3.7.307.11",
+      "hashPath": "awssdk.s3.3.7.307.11.nupkg.sha512"
     },
     "Humanizer/2.14.1": {
       "type": "package",

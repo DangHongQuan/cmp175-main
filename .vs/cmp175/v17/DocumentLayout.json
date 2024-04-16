@@ -1,7 +1,136 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ADMIN\\source\\repos\\cmp175\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\hoc\\CMP175\\cmp175-main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Migrations\\20240416095410_Source.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cmp175\\Migrations\\20240416095410_Source.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|d:\\hoc\\cmp175\\cmp175-main\\cmp175\\models\\source.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|solutionrelative:cmp175\\models\\source.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|d:\\hoc\\cmp175\\cmp175-main\\cmp175\\models\\examplecontent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|solutionrelative:cmp175\\models\\examplecontent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|d:\\hoc\\cmp175\\cmp175-main\\cmp175\\models\\lesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|solutionrelative:cmp175\\models\\lesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|d:\\hoc\\cmp175\\cmp175-main\\cmp175\\models\\sourserivew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|solutionrelative:cmp175\\models\\sourserivew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|d:\\hoc\\cmp175\\cmp175-main\\cmp175\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|solutionrelative:cmp175\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|d:\\hoc\\cmp175\\cmp175-main\\cmp175\\models\\oder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|solutionrelative:cmp175\\models\\oder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|d:\\hoc\\cmp175\\cmp175-main\\cmp175\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|solutionrelative:cmp175\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|d:\\hoc\\cmp175\\cmp175-main\\cmp175\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|solutionrelative:cmp175\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|d:\\hoc\\cmp175\\cmp175-main\\cmp175\\controllers\\shopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|solutionrelative:cmp175\\controllers\\shopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|d:\\hoc\\cmp175\\cmp175-main\\cmp175\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|solutionrelative:cmp175\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|d:\\hoc\\cmp175\\cmp175-main\\cmp175\\controllers\\lessoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|solutionrelative:cmp175\\controllers\\lessoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|d:\\hoc\\cmp175\\cmp175-main\\cmp175\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|solutionrelative:cmp175\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|d:\\hoc\\cmp175\\cmp175-main\\cmp175\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|solutionrelative:cmp175\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|d:\\hoc\\cmp175\\cmp175-main\\cmp175\\controllers\\ordercontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|solutionrelative:cmp175\\controllers\\ordercontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|d:\\hoc\\cmp175\\cmp175-main\\cmp175\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|solutionrelative:cmp175\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|d:\\hoc\\cmp175\\cmp175-main\\cmp175\\views\\shop\\item.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|solutionrelative:cmp175\\views\\shop\\item.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|d:\\hoc\\cmp175\\cmp175-main\\cmp175\\views\\shop\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|solutionrelative:cmp175\\views\\shop\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|d:\\hoc\\cmp175\\cmp175-main\\cmp175\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|solutionrelative:cmp175\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|d:\\hoc\\cmp175\\cmp175-main\\cmp175\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|solutionrelative:cmp175\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|d:\\hoc\\cmp175\\cmp175-main\\cmp175\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|solutionrelative:cmp175\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|d:\\hoc\\cmp175\\cmp175-main\\cmp175\\views\\cart\\cartdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|solutionrelative:cmp175\\views\\cart\\cartdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|d:\\hoc\\cmp175\\cmp175-main\\cmp175\\views\\cart\\viewcart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|solutionrelative:cmp175\\views\\cart\\viewcart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|d:\\hoc\\cmp175\\cmp175-main\\cmp175\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|solutionrelative:cmp175\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|d:\\hoc\\cmp175\\cmp175-main\\cmp175\\models\\videourl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|solutionrelative:cmp175\\models\\videourl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|d:\\hoc\\cmp175\\cmp175-main\\cmp175\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|solutionrelative:cmp175\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|d:\\hoc\\cmp175\\cmp175-main\\cmp175\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|solutionrelative:cmp175\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|d:\\hoc\\cmp175\\cmp175-main\\cmp175\\views\\home\\course.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|solutionrelative:cmp175\\views\\home\\course.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|d:\\hoc\\cmp175\\cmp175-main\\cmp175\\views\\freelesson\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|solutionrelative:cmp175\\views\\freelesson\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|d:\\hoc\\cmp175\\cmp175-main\\cmp175\\views\\source\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|solutionrelative:cmp175\\views\\source\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|d:\\hoc\\cmp175\\cmp175-main\\cmp175\\views\\source\\showallsource.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|solutionrelative:cmp175\\views\\source\\showallsource.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|d:\\hoc\\cmp175\\cmp175-main\\cmp175\\views\\home\\certificate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66E74D9F-3045-4E68-9B15-A44FD10066C6}|cmp175\\cmp175.csproj|solutionrelative:cmp175\\views\\home\\certificate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +138,51 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20240416095410_Source.cs",
+              "DocumentMoniker": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Migrations\\20240416095410_Source.cs",
+              "RelativeDocumentMoniker": "cmp175\\Migrations\\20240416095410_Source.cs",
+              "ToolTip": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Migrations\\20240416095410_Source.cs",
+              "RelativeToolTip": "cmp175\\Migrations\\20240416095410_Source.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T09:54:11.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Source.cs",
+              "DocumentMoniker": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Models\\Source.cs",
+              "RelativeDocumentMoniker": "cmp175\\Models\\Source.cs",
+              "ToolTip": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Models\\Source.cs",
+              "RelativeToolTip": "cmp175\\Models\\Source.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T09:52:11.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Lesson.cs",
+              "DocumentMoniker": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Models\\Lesson.cs",
+              "RelativeDocumentMoniker": "cmp175\\Models\\Lesson.cs",
+              "ToolTip": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Models\\Lesson.cs",
+              "RelativeToolTip": "cmp175\\Models\\Lesson.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T09:51:58.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -18,6 +190,356 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "cmp175\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "cmp175\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAwwCIAAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T14:25:30.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LessonController.cs",
+              "DocumentMoniker": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Controllers\\LessonController.cs",
+              "RelativeDocumentMoniker": "cmp175\\Controllers\\LessonController.cs",
+              "ToolTip": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Controllers\\LessonController.cs",
+              "RelativeToolTip": "cmp175\\Controllers\\LessonController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwBcAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T11:34:04.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "OrderController .cs",
+              "DocumentMoniker": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Controllers\\OrderController .cs",
+              "RelativeDocumentMoniker": "cmp175\\Controllers\\OrderController .cs",
+              "ToolTip": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Controllers\\OrderController .cs",
+              "RelativeToolTip": "cmp175\\Controllers\\OrderController .cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T14:25:27.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "cmp175\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Controllers\\UserController.cs",
+              "RelativeToolTip": "cmp175\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADYAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T05:06:47.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ShopController.cs",
+              "DocumentMoniker": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Controllers\\ShopController.cs",
+              "RelativeDocumentMoniker": "cmp175\\Controllers\\ShopController.cs",
+              "ToolTip": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Controllers\\ShopController.cs",
+              "RelativeToolTip": "cmp175\\Controllers\\ShopController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACMAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T11:34:06.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "cmp175\\Models\\ErrorViewModel.cs",
+              "ToolTip": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "cmp175\\Models\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T03:31:09.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ExampleContent.cs",
+              "DocumentMoniker": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Models\\ExampleContent.cs",
+              "RelativeDocumentMoniker": "cmp175\\Models\\ExampleContent.cs",
+              "ToolTip": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Models\\ExampleContent.cs",
+              "RelativeToolTip": "cmp175\\Models\\ExampleContent.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T03:31:10.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Oder.cs",
+              "DocumentMoniker": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Models\\Oder.cs",
+              "RelativeDocumentMoniker": "cmp175\\Models\\Oder.cs",
+              "ToolTip": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Models\\Oder.cs",
+              "RelativeToolTip": "cmp175\\Models\\Oder.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T03:31:11.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Users.cs",
+              "DocumentMoniker": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "cmp175\\Models\\Users.cs",
+              "ToolTip": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Models\\Users.cs",
+              "RelativeToolTip": "cmp175\\Models\\Users.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAUwA4AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T10:37:34.84Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SourseRivew.cs",
+              "DocumentMoniker": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Models\\SourseRivew.cs",
+              "RelativeDocumentMoniker": "cmp175\\Models\\SourseRivew.cs",
+              "ToolTip": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Models\\SourseRivew.cs",
+              "RelativeToolTip": "cmp175\\Models\\SourseRivew.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T03:31:15.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "cmp175\\Controllers\\CartController.cs",
+              "ToolTip": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Controllers\\CartController.cs",
+              "RelativeToolTip": "cmp175\\Controllers\\CartController.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAUwBYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T11:34:02.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\appsettings.json",
+              "RelativeDocumentMoniker": "cmp175\\appsettings.json",
+              "ToolTip": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\appsettings.json",
+              "RelativeToolTip": "cmp175\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-16T04:57:46.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Models\\Admin.cs",
+              "RelativeDocumentMoniker": "cmp175\\Models\\Admin.cs",
+              "ToolTip": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Models\\Admin.cs",
+              "RelativeToolTip": "cmp175\\Models\\Admin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T05:47:31.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Item.cshtml",
+              "DocumentMoniker": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Views\\Shop\\Item.cshtml",
+              "RelativeDocumentMoniker": "cmp175\\Views\\Shop\\Item.cshtml",
+              "ToolTip": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Views\\Shop\\Item.cshtml",
+              "RelativeToolTip": "cmp175\\Views\\Shop\\Item.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T05:02:18.06Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "cmp175\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "cmp175\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T04:05:10.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Views\\Shop\\Index.cshtml",
+              "RelativeDocumentMoniker": "cmp175\\Views\\Shop\\Index.cshtml",
+              "ToolTip": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Views\\Shop\\Index.cshtml",
+              "RelativeToolTip": "cmp175\\Views\\Shop\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T05:02:17.339Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "cmp175\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "cmp175\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T03:52:01.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "cmp175\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "cmp175\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T03:52:00.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ViewCart.cshtml",
+              "DocumentMoniker": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Views\\Cart\\ViewCart.cshtml",
+              "RelativeDocumentMoniker": "cmp175\\Views\\Cart\\ViewCart.cshtml",
+              "ToolTip": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Views\\Cart\\ViewCart.cshtml",
+              "RelativeToolTip": "cmp175\\Views\\Cart\\ViewCart.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T03:51:32.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "cmp175\\Views\\Cart\\Index.cshtml",
+              "ToolTip": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "cmp175\\Views\\Cart\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T03:51:31.785Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CartDetail.cshtml",
+              "DocumentMoniker": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Views\\Cart\\CartDetail.cshtml",
+              "RelativeDocumentMoniker": "cmp175\\Views\\Cart\\CartDetail.cshtml",
+              "ToolTip": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Views\\Cart\\CartDetail.cshtml",
+              "RelativeToolTip": "cmp175\\Views\\Cart\\CartDetail.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T03:51:31.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "VideoURL.cs",
+              "DocumentMoniker": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Models\\VideoURL.cs",
+              "RelativeDocumentMoniker": "cmp175\\Models\\VideoURL.cs",
+              "ToolTip": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Models\\VideoURL.cs",
+              "RelativeToolTip": "cmp175\\Models\\VideoURL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T03:31:17.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "cmp175\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "cmp175\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T03:51:52.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ShowAllSource.cshtml",
+              "DocumentMoniker": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Views\\Source\\ShowAllSource.cshtml",
+              "RelativeDocumentMoniker": "cmp175\\Views\\Source\\ShowAllSource.cshtml",
+              "ToolTip": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Views\\Source\\ShowAllSource.cshtml",
+              "RelativeToolTip": "cmp175\\Views\\Source\\ShowAllSource.cshtml",
+              "ViewState": "AQIAADQAAAAAAAAAAAAiwEoAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T04:58:14.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Course.cshtml",
+              "DocumentMoniker": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Views\\Home\\Course.cshtml",
+              "RelativeDocumentMoniker": "cmp175\\Views\\Home\\Course.cshtml",
+              "ToolTip": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Views\\Home\\Course.cshtml",
+              "RelativeToolTip": "cmp175\\Views\\Home\\Course.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T03:51:41.558Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Views\\Source\\Index.cshtml",
+              "RelativeDocumentMoniker": "cmp175\\Views\\Source\\Index.cshtml",
+              "ToolTip": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Views\\Source\\Index.cshtml",
+              "RelativeToolTip": "cmp175\\Views\\Source\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T04:50:39.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Program.cs",
+              "RelativeDocumentMoniker": "cmp175\\Program.cs",
+              "ToolTip": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Program.cs",
+              "RelativeToolTip": "cmp175\\Program.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAjwDEAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T04:20:08.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Views\\FreeLesson\\Index.cshtml",
+              "RelativeDocumentMoniker": "cmp175\\Views\\FreeLesson\\Index.cshtml",
+              "ToolTip": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Views\\FreeLesson\\Index.cshtml",
+              "RelativeToolTip": "cmp175\\Views\\FreeLesson\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T03:50:15.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Certificate.cshtml",
+              "DocumentMoniker": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Views\\Home\\Certificate.cshtml",
+              "RelativeDocumentMoniker": "cmp175\\Views\\Home\\Certificate.cshtml",
+              "ToolTip": "D:\\hoc\\CMP175\\cmp175-main\\cmp175\\Views\\Home\\Certificate.cshtml",
+              "RelativeToolTip": "cmp175\\Views\\Home\\Certificate.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T03:51:40.564Z"
             }
           ]
         }

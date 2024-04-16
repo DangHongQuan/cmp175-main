@@ -1,7 +1,10 @@
-﻿namespace cmp175.Models
+﻿using System.ComponentModel.DataAnnotations;
+namespace cmp175.Models
 {
     public class Admin
     {
-        public String email;
+        public int Id { get; set; }
+        [Required, StringLength(100)]
+        public string Email { get; set; }
     }
 }
