@@ -55,7 +55,7 @@ namespace cmp175.Controllers
             return View(sourses);
         }
 
-        public async Task<IActionResult> ViewVideos(int sourceId)
+        public async Task<IActionResult> ViewVideos(int sourceIds)
         {
             var currentUser = await _context.Users.FirstOrDefaultAsync(u => u.UserName == User.Identity.Name);
 
@@ -64,22 +64,18 @@ namespace cmp175.Controllers
                 return NotFound();
             }
 
+            var hasAccess = await _context.Oders.AnyAsync(o => o.UserId == currentUser.Id && o.SourceId == sourceIds);
 
-            var hasAccess = await _context.Oders.AnyAsync(o => o.UserId == currentUser.Id && o.SourceId == sourceId);
-
-
-         
-
-            if (hasAccess)
+            if (!hasAccess)
             {
-                return RedirectToPage("/login");
+                return RedirectToPage("/logn"); // Redirect to a custom Access Denied page or action.
             }
 
-
-            var videos = await _context.VideoUrls.Where(v => v.SourceId == sourceId).ToListAsync();
+            var videos = await _context.VideoUrls.Where(v => v.SourceId == sourceIds).ToListAsync();
 
             return View(videos);
         }
+
 
 
 

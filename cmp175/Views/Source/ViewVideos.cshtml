@@ -1,9 +1,65 @@
-﻿@*@model List<cmp175.Models.VideoURL>
+﻿@model List<cmp175.Models.VideoURL>
+@{
+    Layout = "_Layout";
+}
 
-@foreach (var video in Model)
+<div class="video-container text-center mt-5" >
+    @foreach (var video in Model)
+    {
+        <div class="video-wrapper">
+            <iframe class="video-frame" src="@video.videoURL" frameborder="0" allowfullscreen></iframe>
+        </div>
+    }
+</div>
+
+@if (Model.Count > 1)
 {
-    <div>
-        <h3>@video.Name</h3>
-        <iframe width="560" height="315" src="@video.videoURL" frameborder="0" allowfullscreen></iframe>
+    <div class="episode-navigation container" style="margin-bottom: 300px">
+        @for (var i = 0; i < Model.Count; i++)
+        {
+            <button class="btn btn-primary episode-button" data-index="@i">Tập @(i + 1)</button>
+        }
     </div>
-}*@
+}
+
+@* CSS styles for the video container and episode buttons *@
+<style>
+  
+
+ 
+
+    .video-frame {
+        width: 1800px;
+        height: 800px;
+    }
+
+    .episode-navigation {
+        margin-top: 10px;
+    }
+</style>
+
+@* JavaScript for handling episode button clicks and showing the first video by default *@
+<script>
+    var videos = document.querySelectorAll('.video-wrapper');
+    var buttons = document.querySelectorAll('.episode-button');
+
+    buttons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            var index = parseInt(this.getAttribute('data-index'));
+            showVideo(index);
+        });
+    });
+
+    function showVideo(index) {
+        videos.forEach(function (video, i) {
+            if (i === index) {
+                video.style.display = 'block';
+            } else {
+                video.style.display = 'none';
+            }
+        });
+    }
+
+    // Show the first video by default
+    showVideo(0);
+</script>

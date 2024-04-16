@@ -11,7 +11,8 @@
                 <div class="card-body">
                     <h5 class="card-title">@sourse.NameSource</h5>
                     <p>Số lượng: @sourse.quantityVideo</p>
-                    <a asp-action="ViewVideos" asp-route-sourseId="@sourse.Id" class="btn btn-primary btn-ms">Xem video</a>
+              
+                    <a asp-action="ViewVideos" asp-route-sourceIds="@sourse.Id" class="btn btn-primary btn-ms">Xem video</a>
                 </div>
             </div>
         }
@@ -38,7 +39,8 @@
                         <td>@sourse.quantityVideo</td>
                         <td>@sourse.TimeVideo</td>
                         <td><img src="@sourse.imageUrl" style="max-width: 100px;" /></td>
-                        <td><a asp-action="ViewVideos" asp-route-sourseId="@sourse.Id">@sourse.NameSource</a></td>
+                       <td><a asp-action="ViewVideos" asp-route-sourceIds="@sourse.Id">@sourse.NameSource</a></td>
+
                     </tr>
                 }
             </tbody>
