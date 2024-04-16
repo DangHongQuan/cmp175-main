@@ -19,6 +19,8 @@ namespace cpm175.DataAccess
         public DbSet<Example> Examples { get; set; }
         public DbSet<ContentDetail> ContentDetails { get; set; }
         public DbSet<ExampleContent> ExampleContents { get; set; }
+        public DbSet<Admin> Admins { get; set; }
+        public DbSet<Category> Categories { get; set; }
 
     }
 
